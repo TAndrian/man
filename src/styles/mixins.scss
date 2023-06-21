@@ -1,0 +1,11 @@
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-row($align-x: initial, $align-y: initial) {
+  text-align: center;
+  @include flex();
+  flex-direction: row;
+  justify-content: $align-x;
+  align-items: $align-y;
+}
